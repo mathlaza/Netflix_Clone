@@ -1,6 +1,9 @@
-import { Movie } from "../entities/movie";
+import { Movie, MovieInput } from "../entities/movie";
 
+// Contrato do nosso repository
 interface MoviesRepository {
   findAll(): Promise<Movie[]>;
-  create(movie: Movie): Promise<void>
+  create(movie: MovieInput): Promise<void>
 }
+
+export { MoviesRepository };

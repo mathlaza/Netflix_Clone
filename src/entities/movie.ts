@@ -4,7 +4,6 @@ interface MovieInput {
   name: string;
   sinopse: string;
   thumbnail?: string
-  categories: Category[]
 }
 
 interface Movie extends MovieInput {

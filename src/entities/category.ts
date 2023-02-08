@@ -3,11 +3,4 @@ interface Category {
   name: string;
 }
 
-interface CategoryMovies extends Category {
-  movies: Movie
-}
-
-export {
-  Category,
-  CategoryMovies
-}
+export { Category };
